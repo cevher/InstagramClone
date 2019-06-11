@@ -59,4 +59,21 @@
             app:layout_constraintTop_toBottomOf="@+id/edtKickPower" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="8dp"/>
+    <TextView
+            android:text="Get Data From Server"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtGetData" android:textColor="@color/colorAccent"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/btnSave"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:textSize="30sp"/>
+    <Button
+            android:text="GET ALL KICKBOXER"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGetAll" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/txtGetData" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" android:background="@color/colorAccent"/>
 </android.support.constraint.ConstraintLayout>
