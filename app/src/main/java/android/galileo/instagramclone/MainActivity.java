@@ -1,5 +1,6 @@
 package android.galileo.instagramclone;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     private TextView txtGetData;
     private Button btnGetAll;
     private String allKickboxers;
-
+    private Button switchActivity;
 
 
     @Override
@@ -76,6 +77,17 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                         }
                     }
                 });
+            }
+        });
+
+
+
+        switchActivity = findViewById(R.id.btnNextActivity);
+        switchActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignUpLoginActivity.class);
+                startActivity(intent);
             }
         });
     }
